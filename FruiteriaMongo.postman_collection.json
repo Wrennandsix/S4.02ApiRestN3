@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "a6c22485-8a7a-4dd7-851f-21995ff2312f",
+		"name": "FruiteriaMongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32194980"
+	},
+	"item": [
+		{
+			"name": "addFruit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"manzana\",\r\n    \"quantityKg\":\"25\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{server}}:{{port}}/fruita/add"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteFruit",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{server}}:{{port}}/fruita/delete/17"
+			},
+			"response": []
+		},
+		{
+			"name": "getFruitById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{server}}:{{port}}/fruita/getOne/4"
+			},
+			"response": []
+		},
+		{
+			"name": "updateFruit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"manzanatransformer\",\r\n    \"quantityKg\":\"255\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{server}}:{{port}}/fruita/update/5"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllFruit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{server}}:{{port}}/fruita/getAll"
+			},
+			"response": []
+		}
+	]
+}
